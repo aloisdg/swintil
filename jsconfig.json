@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"target": "ES6",
+		"module": "commonjs"
+	},
+	"files": [
+		"source/index.js",
+		"test/test.js"
+	]
+}

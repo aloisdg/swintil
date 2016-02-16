@@ -1,0 +1,41 @@
+{
+  "name": "swintil",
+  "version": "0.1.0",
+  "description": "Swintil stands for SWatch INternet TIme Library. Swintil package allows to convert a Date to beat time.",
+  "main": "distribution/index.js",
+  "bin": "distribution/cli.js",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "prebuild": "rm -rf distribution && mkdir distribution",
+    "build": "babel source --presets babel-preset-es2015 --out-dir distribution && chmod +x distribution/cli.js",
+    "prepublish": "npm run build",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aloisdg/swintil.git"
+  },
+  "keywords": [
+    "swatch",
+    "internet",
+    "time",
+    "beat"
+  ],
+  "author": {
+    "name": "aloisdg",
+    "email": "aloisdg@gmail.com",
+    "url": "http://github.com/aloisdg"
+  },
+  "license": "0BSD",
+  "bugs": {
+    "url": "https://github.com/aloisdg/swintil/issues"
+  },
+  "homepage": "https://github.com/aloisdg/swintil#readme",
+  "devDependencies": {
+    "ava": "^0.11.0",
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0"
+  }
+}
